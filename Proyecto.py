@@ -1,4 +1,3 @@
-print("hola")
 print("Como desea realizar la busqueda, por nombre o codigo?: ")
 c = input("""
 a.- Nombre
