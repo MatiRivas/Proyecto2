@@ -1,32 +1,24 @@
-print("Como desea realizar la busqueda, por nombre o codigo?: ")
-c = input("""
-a.- Nombre
-b.- Codigo
-""")
-if c == "b":
-    v = input("Ingrese el codigo de la region: ")
-if c == "a":
     print ("""
-    1.Región de Arica y Parinacota
-    2.Región de Tarapacá
-    3.Region de Antofagasta
-    4.Region de Atacama
-    5.Región de Coquimbo
-    6.Región de Valparaiso
-    7.Región Metropolitana
-    8.Región del Libertador General Bernardo O'higgins
-    9.Región del Maule
-    10.Región del Ñuble
-    11.Región del Biobio
-    12.Región de la Araucania
-    13.Región de los Rios
-    14.Región de los Lagos
-    15.Región de Aysén del General Carlos Ibáñez del Campo
-    16.Región de Magallanes
+    1.Región de Arica y Parinacota (15)
+    2.Región de Tarapacá (01)
+    3.Region de Antofagasta (02)
+    4.Region de Atacama (03)
+    5.Región de Coquimbo (04)
+    6.Región de Valparaiso (05)
+    7.Región Metropolitana (13)
+    8.Región del Libertador General Bernardo O'higgins (06)
+    9.Región del Maule (07)
+    10.Región del Ñuble (16)
+    11.Región del Biobio (08)
+    12.Región de la Araucania (09)
+    13.Región de los Rios (14)
+    14.Región de los Lagos (10)
+    15.Región de Aysén del General Carlos Ibáñez del Campo (11)
+    16.Región de Magallanes (12)
     """)
 x = int(input("Ingrese el numero correspondiente segun la region: "))
 
-if x == 1:
+if x == :
     print("a.- Examenes PCR acumulativos")
     print("b.- Examenes PCR no acumulativos")
     z = input("Ingrese una opcion: ")
