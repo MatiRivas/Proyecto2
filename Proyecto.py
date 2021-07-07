@@ -1,8 +1,8 @@
+z= ""
 print("""Como desea realizar su busqueda?:
-a.- Nombre
-v = input(b.- Codigo
-""")
-
+a.- Nombre""")
+v = input("b.- Codigo \n")
+if v == "a":
     print ("""
     1.Región de Arica y Parinacota (15)
     2.Región de Tarapacá (01)
@@ -22,329 +22,330 @@ v = input(b.- Codigo
     16.Región de Magallanes (12)
     """)
 x = int(input("Ingrese el numero correspondiente segun la region: "))
-
 if x == 1:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021']
-        primas = [60, 80, 79, 80, 82]
+                import matplotlib.pyplot as plt
+                fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021']
+                primas = [60, 80, 79, 80, 82]
 
-        plt.bar(range(5), primas, edgecolor='black')
+                plt.bar(range(5), primas, edgecolor='black')
 
-        plt.xticks(range(5), fechas, rotation=60)
-        plt.title("PRIMA DE RIESGO EN ESPAÑA")
-        plt.ylim(min(primas)-1, max(primas)+1)
-        plt.show()
+                plt.xticks(range(5), fechas, rotation=60)
+                plt.title("PRIMA DE RIESGO EN ESPAÑA")
+                plt.ylim(min(primas)-1, max(primas)+1)
+                plt.show()
 
-    if z == "b":
+elif z == "b":
     
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
-if x == 2:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "a":
+elif x == 2:
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+elif z == "a":
 
-    if z == "b":
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
+
+elif z == "b":
     
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 if x == 3:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "b":
+elif z == "b":
     
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 if x == 4:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "b":
+elif z == "b":
     
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
-if x == 5:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
+elif x == 5:
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "b":
-    
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
-if x == 6:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+elif z == "b":
+        
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
+elif x == 6:
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "b":
-    
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
-if x == 7:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+elif z == "b":
+        
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
+elif x == 7:
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "b":
-    
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
-if x == 8:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+elif z == "b":
+        
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
+elif x == 8:
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "b":
-    
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
-if x == 9:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+elif z == "b":
+        
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
+elif x == 9:
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "b":
-    
-        import matplotlib.pyplot as plt
-        ejex=[999,3000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
-if x == 10:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+elif z == "b":
+        
+                import matplotlib.pyplot as plt
+                ejex=[999,3000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
+elif x == 10:
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "b":
-    
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
-if x == 11:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+elif z == "b":
+        
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
+elif x == 11:
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "b":
-    
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
-if x == 12:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+elif z == "b":
+        
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
+elif x == 12:
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "b":
-    
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
-if x == 13:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+elif z == "b":
+        
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
+elif x == 13:
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "b":
-    
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
-if x == 14:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+elif z == "b":
+        
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
+elif x == 14:
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "b":
-    
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
-if x == 15:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+elif z == "b":
+        
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
+elif x == 15:
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "b":
-    
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
-if x == 16:
-    print("a.- Examenes PCR acumulativos")
-    print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")
+elif z == "b":
+        
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
+elif x == 16:
+                print("a.- Examenes PCR acumulativos")
+                print("b.- Examenes PCR no acumulativos")
+                z = input("Ingrese una opcion: ")
 
-    if z == "a":
+elif z == "a":
 
-        import matplotlib.pyplot as plt
-        ejex=[4,8,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+                import matplotlib.pyplot as plt
+                ejex=[4,8,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
 
-    if z == "b":
-    
-        import matplotlib.pyplot as plt
-        ejex=[999,1000,13,17,20]
-        ejey=[54,67,98,78,45]
-        plt.plot(ejex,ejey)
-        plt.show()
+elif z == "b":
+        
+                import matplotlib.pyplot as plt
+                ejex=[999,1000,13,17,20]
+                ejey=[54,67,98,78,45]
+                plt.plot(ejex,ejey)
+                plt.show()
+        
