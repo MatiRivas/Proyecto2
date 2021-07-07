@@ -1,3 +1,8 @@
+print("""Como desea realizar su busqueda?:
+a.- Nombre
+v = input(b.- Codigo
+""")
+
     print ("""
     1.Región de Arica y Parinacota (15)
     2.Región de Tarapacá (01)
