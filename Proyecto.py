@@ -1,9 +1,10 @@
-z= ""
+
 print("""Como desea realizar su busqueda?:
-a.- Nombre""")
-v = input("b.- Codigo \n")
-if v == "a":
-    print ("""
+a.- Nombre
+v = input(b.- Codigo
+""")
+
+print ("""
     1.Región de Arica y Parinacota (15)
     2.Región de Tarapacá (01)
     3.Region de Antofagasta (02)
@@ -22,330 +23,427 @@ if v == "a":
     16.Región de Magallanes (12)
     """)
 x = int(input("Ingrese el numero correspondiente segun la region: "))
+
 if x == 1:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
 
-elif z == "a":
+    if z == "a":
+        import matplotlib.pyplot as plt
+        ejex=[999,1000,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
 
-                import matplotlib.pyplot as plt
-                fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021']
-                primas = [60, 80, 79, 80, 82]
-
-                plt.bar(range(5), primas, edgecolor='black')
-
-                plt.xticks(range(5), fechas, rotation=60)
-                plt.title("PRIMA DE RIESGO EN ESPAÑA")
-                plt.ylim(min(primas)-1, max(primas)+1)
-                plt.show()
-
-elif z == "b":
+    if z == "b":
     
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021','22/06/2021','23/06/2021','24/06/2021','25/06/2021','26/06/2021','27/06/2021','28/06/2021','29/06/2021','30/06/2021','01/07/2021','02/07/2021','03/07/2021','04/07/2021']
+        primas = [858,639,757,848,1344,1210,1089,1669,824,660,689,1304,975,1042]
 
-elif x == 2:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
+        plt.bar(range(14), primas, edgecolor='black')
 
-elif z == "a":
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region Arica y parinacota ")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
 
-elif z == "b":
+if x == 2:
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
+
+    if z == "a":
+
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
+
+    if z == "b":
     
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [	2163,1241,1229,1121,1368,1156,1468,2306,1498,917,1082,1285,1236,1348]
+
+        plt.bar(range(14), primas, edgecolor='black')
+
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region Tarapaca")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
+
 if x == 3:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
 
-elif z == "a":
+    if z == "a":
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
 
-elif z == "b":
+    if z == "b":
     
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [5502,	4244,	913,	2496,	2505,	2290,	2440,	4993,	5152,	907,	2279,	2642,	2250,	2712]
+
+        plt.bar(range(14), primas, edgecolor='black')
+
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region Antofagasta")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
+
 if x == 4:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
 
-elif z == "a":
+    if z == "a":
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
 
-elif z == "b":
+    if z == "b":
     
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
-elif x == 5:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [1485,	1030,	622,	752,	1894,	1497,	1378,	1405,	1101,	1535,	729,	781,	2531,	1636]
 
-elif z == "a":
+        plt.bar(range(14), primas, edgecolor='black')
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region Atacama")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
 
-elif z == "b":
+
+if x == 5:
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
+
+    if z == "a":
+
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
+
+    if z == "b":
+    
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [3513,	1721,	1155,	988,	2701,	2605,	2609,	2963,	1221,	1420,	1150,	1695,	2775,	3695]
+
+        plt.bar(range(14), primas, edgecolor='black')
+
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region Coquimbo")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
+
+if x == 6:
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
+
+    if z == "a":
+
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
+
+    if z == "b":
+    
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [7064,	3035,	2004,	3272,	6878,	6477,	6886,	5275,	2854,	2124,	3386,	6313,	6690,	6819]
+
+        plt.bar(range(14), primas, edgecolor='black')
+
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region Valparaiso")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
+
+if x == 7:
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
+
+    if z == "a":
+
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
+
+    if z == "b":
+    
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [60, 80, 79, 80, 82,65,43,53,56,43,43,64,72,23]
+
+        plt.bar(range(14), primas, edgecolor='black')
+
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region Metropolitana")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
+
+
+if x == 8:
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
+
+    if z == "a":
+
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
+
+    if z == "b":
+    
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [60, 80, 79, 80, 82,65,43,53,56,43,43,64,72,23]
+
+        plt.bar(range(14), primas, edgecolor='black')
+
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region O'higgins")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
+
+
+if x == 9:
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
+
+    if z == "a":
+
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
+
+    if z == "b":
         
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
-elif x == 6:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [60, 80, 79, 80, 82,65,43,53,56,43,43,64,72,23]
 
-elif z == "a":
+        plt.bar(range(14), primas, edgecolor='black')
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region Maule")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
 
-elif z == "b":
-        
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
-elif x == 7:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
 
-elif z == "a":
+if x == 10:
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+    if z == "a":
 
-elif z == "b":
-        
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
-elif x == 8:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
 
-elif z == "a":
+    if z == "b":
+    
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [60, 80, 79, 80, 82,65,43,53,56,43,43,64,72,23]
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+        plt.bar(range(14), primas, edgecolor='black')
 
-elif z == "b":
-        
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
-elif x == 9:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region Ñuble")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
 
-elif z == "a":
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+if x == 11:
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
 
-elif z == "b":
-        
-                import matplotlib.pyplot as plt
-                ejex=[999,3000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
-elif x == 10:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
+    if z == "a":
 
-elif z == "a":
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+    if z == "b":
+    
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [60, 80, 79, 80, 82,65,43,53,56,43,43,64,72,23]
 
-elif z == "b":
-        
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
-elif x == 11:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
+        plt.bar(range(14), primas, edgecolor='black')
 
-elif z == "a":
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region biobio")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
 
-elif z == "b":
-        
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
-elif x == 12:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
+if x == 12:
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
 
-elif z == "a":
+    if z == "a":
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
 
-elif z == "b":
-        
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
-elif x == 13:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
+    if z == "b":
+    
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [60, 80, 79, 80, 82,65,43,53,56,43,43,64,72,23]
 
-elif z == "a":
+        plt.bar(range(14), primas, edgecolor='black')
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region de la Araucania")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
 
-elif z == "b":
-        
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
-elif x == 14:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
 
-elif z == "a":
+if x == 13:
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+    if z == "a":
 
-elif z == "b":
-        
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
-elif x == 15:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
 
-elif z == "a":
+    if z == "b":
+    
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [60, 80, 79, 80, 82,65,43,53,56,43,43,64,72,23]
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+        plt.bar(range(14), primas, edgecolor='black')
 
-elif z == "b":
-        
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
-elif x == 16:
-                print("a.- Examenes PCR acumulativos")
-                print("b.- Examenes PCR no acumulativos")
-                z = input("Ingrese una opcion: ")
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region de los Rios")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
 
-elif z == "a":
 
-                import matplotlib.pyplot as plt
-                ejex=[4,8,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
+if x == 14:
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
 
-elif z == "b":
-        
-                import matplotlib.pyplot as plt
-                ejex=[999,1000,13,17,20]
-                ejey=[54,67,98,78,45]
-                plt.plot(ejex,ejey)
-                plt.show()
-        
+    if z == "a":
+
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
+
+    if z == "b":
+    
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [60, 80, 79, 80, 82,65,43,53,56,43,43,64,72,23]
+
+        plt.bar(range(14), primas, edgecolor='black')
+
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region de los Lagos")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
+
+if x == 15:
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
+
+    if z == "a":
+
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
+
+    if z == "b":
+    
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [60, 80, 79, 80, 82,65,43,53,56,43,43,64,72,23]
+
+        plt.bar(range(14), primas, edgecolor='black')
+
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region de Aysén del General Carlos Ibáñez del Campo")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
+
+if x == 16:
+    print("a.- Examenes PCR acumulativos")
+    print("b.- Examenes PCR no acumulativos")
+    z = input("Ingrese una opcion: ")
+
+    if z == "a":
+
+        import matplotlib.pyplot as plt
+        ejex=[4,8,13,17,20]
+        ejey=[54,67,98,78,45]
+        plt.plot(ejex,ejey)
+        plt.show()
+
+    if z == "b":
+    
+        import matplotlib.pyplot as plt
+        fechas = ['21/06/2021', '22/06/2021', '23/06/2021', '24/06/2021', '25/06/2021', '26/06/2021', '27/06/2021', '28/06/2021', '29/06/2021' ,'30/06/2021' ,'01/07/2021','02/07/2021' ,'03/07/2021','04/07/2021']
+        primas = [60, 80, 79, 80, 82,65,43,53,56,43,43,64,72,23]
+
+        plt.bar(range(14), primas, edgecolor='black')
+
+        plt.xticks(range(14), fechas, rotation=60)
+        plt.title("examenes PCR no acumulados Region de Magallanes")
+        plt.ylim(min(primas)-1, max(primas)+1)
+        plt.show()
