@@ -18,7 +18,7 @@
     """)
 x = int(input("Ingrese el numero correspondiente segun la region: "))
 
-if x == :
+if x == 1:
     print("a.- Examenes PCR acumulativos")
     print("b.- Examenes PCR no acumulativos")
     z = input("Ingrese una opcion: ")
