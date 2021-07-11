@@ -20,34 +20,34 @@ print ("""
 x = int(input("Ingrese el numero correspondiente segun la region: ")) # un input con un INT para ingresar valores numericos enteros para escoger una de las regiones que el usuario quiera
  
 
-if x == 1: #se da una condicion if, ya que, en este if, se ingresa un 1, damos paso a la informacion de arica y parinacota (segun mi menú) 
+if x == 1: #se da una condicion if, ya que, en este if, si se ingresa un 1, damos paso a la informacion de arica y parinacota (segun mi menú) 
     print("a.- Examenes PCR acumulativos")
     print("b.- Examenes PCR no acumulativos")
-    z = input("Ingrese una opcion: ")#
+    z = input("Ingrese una opcion: ")# aqui un input para ingresar una de las 2 opciones de este submenu
      
 
-    if z == "a":
+    if z == "a": #Si es usuario elige la opcion "a" del submenú, ingresa a esta condicion
 
-        import matplotlib.pyplot as plt #Se hace un llamado a la libreria para que muestre graficamente el grafico
-        ejex=['21/06/2021','-','23/06/2021','--','25/06/2021','---','27/06/2021','----','29/06/2021','.','01/07/2021','...','04/07/2021']
-        ejey=[858,"-",2254,"--",4446,"---",6745,"----",9238,".",10587,"...",13908]
-        plt.plot(ejex,ejey)
-        plt.title("Examenes PCR acumulados en la Region de Arica y Parinacota")
-        plt.show()
+        import matplotlib.pyplot as plt #Se hace un llamado a la libreria para que muestre el grafico
+        ejex=['21/06/2021','-','23/06/2021','--','25/06/2021','---','27/06/2021','----','29/06/2021','.','01/07/2021','...','04/07/2021']#En el eje X, mostrare los datos que estan dentro de esa lista
+        ejey=[858,"-",2254,"--",4446,"---",6745,"----",9238,".",10587,"...",13908]# En el eje Y, mostrare los datos que estan dentro de esta lista
+        plt.plot(ejex,ejey)# este plt.plot hace que se ingresen los datos de las variables, al grafico  
+        plt.title("Examenes PCR acumulados en la Region de Arica y Parinacota")#Es un titulo para darle al grafico
+        plt.show()#plt.show(), lo que hace es desplegar el grafico por pantalla
 
-    if z == "b":
+    if z == "b": #Si el usuario elige la opcion "b" en el submenu que está mas arriba, ingresa a esta condicion, que es basicamente el mismo codigo que el de la opcion "a", pero con distinta informacion
     
         import matplotlib.pyplot as plt
-        fechas = ['21/06/2021','22/06/2021','23/06/2021','24/06/2021','25/06/2021','26/06/2021','27/06/2021','28/06/2021','29/06/2021','30/06/2021','01/07/2021','02/07/2021','03/07/2021','04/07/2021']
-        primas = [858,639,757,848,1344,1210,1089,1669,824,660,689,1304,975,1042]
+        fechas = ['21/06/2021','22/06/2021','23/06/2021','24/06/2021','25/06/2021','26/06/2021','27/06/2021','28/06/2021','29/06/2021','30/06/2021','01/07/2021','02/07/2021','03/07/2021','04/07/2021']#En el eje X del grafico, se posicionará todo lo que está dentro de esta lista 
+        primas = [858,639,757,848,1344,1210,1089,1669,824,660,689,1304,975,1042]# En el eje Y del grafico, se mostrara todo lo que está dentro de la lista "primas"
 
-        plt.bar(range(14), primas, edgecolor='black')
+        plt.bar(range(14), primas, edgecolor='black')#Este plt.bar lo que hace es colocar que habran 14 barras, con el valor de la variable primas, y el borde de las barras será de color negro 
 
         plt.xticks(range(14), fechas, rotation=60)
         plt.title("examenes PCR no acumulados Region Arica y parinacota ")
         plt.ylim(min(primas)-1, max(primas)+1)
         plt.show()
-
+#Lo que resta de codigo ya viene siendo lo mismo que he explicado por el momento...
 
 if x == 2:
     print("a.- Examenes PCR acumulativos")
